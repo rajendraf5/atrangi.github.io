@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link href="assets/demo/demo.css" rel="stylesheet" />
     <link href="assets/demo/vertical-nav.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   </head>
   <body>
-   <header id="sticky-header">
+  <header id="sticky-header">
   <nav class="navbar navbar-transparent navbar-expand-lg">
         <div class="container relative">
             <div class="navbar-translate">
@@ -46,161 +48,411 @@
           </div>
         </nav>
   </header> 
+<section>  
   <div class="landing-page-container">
-      <div class="progression-vertical-center-table">
-        <div class="progression-vertical-center-text">
-          <h2 class="subtitle">You can learn anything</h2>
-           <p class='typewriter'>I'm a 
-  <span class='typewriter-text' data-text='[ "photographer. ", "designer. ", "developer. " ]'></span>
-  </p>
-          <!-- <h2>You can learn anything</h2>
-          <h3>Membership Plans, Free Trials, and More</h3>
-          <a href="home.html" class="btn"> Start Your Free Trial</a> -->
-          
-        </div><!-- close .progression-vertical-center-text -->
-      </div><!-- close .progression-vertical-center-table -->
-      
-    </div><!-- close #landing-page-container -->
+    <div class="progression-vertical-center-table">
+      <div class="progression-vertical-center-text">
+        <h2 class="videosubtitle">You can learn anything</h2>
+        <p class='typewriter'>I'm a 
+          <span class='typewriter-text' data-text='[ "photographer. ", "designer. ", "developer. " ]'></span>
+        </p>
+      </div><!-- close .progression-vertical-center-text -->
+    </div><!-- close .progression-vertical-center-table -->
+  </div><!-- close #landing-page-container -->
     
-    <video class="background_video" loop="" muted=""><source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/mp4"></video>
+    <video class="background_video" loop="" muted="">
+      <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/mp4"></video>
     <div id="video_cover"></div>
-    
-    <a href="#0" id="pro-scroll-top"><i class="fas fa-chevron-up"></i></a> 
-<!--    <video class="background_video" loop="" muted=""><source src="https://progression-studios.com/vayvo/images/video.mp4" type="video/mp4"></video> -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="display: none;">
-          <!-- <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol> -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <video class="background_video" loop="" muted=""><source src="https://progression-studios.com/vayvo/images/video.mp4" type="video/mp4"></video>
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/slider2.jpg" class="d-block w-100" />
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/slider3.jpg" class="d-block w-100" />
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <i class="material-icons">keyboard_arrow_left</i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <i class="material-icons">keyboard_arrow_right</i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <!-- End Carousel Card -->
+    <a href="#About" data-et-has-event-already="true" class="page-scroll">
+      <div class="scroll-downs">
+        <div class="mousey"><div class="scroller"></div></div>
+      </div>
+    </a>
+</section>    
 
  
-    <section class="section relative bg-gray">
+    <section class="about-area ptb-120">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-12 d-flex justify-content-end">
-
+            <div class="about-content">
+              <div class="subtitle">Join The Event</div>
+                <h2 class="section-title">We Create and <b>Turn</b> Into Reality</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
           </div><!--./col-lg-8-->
           <div class="col-lg-6 col-md-12 col-12">
-           
+            <div id="carousel">
+    
+            <!-- Carousel Card -->
+            <div class="card card-raised card-carousel">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/sample3.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/sample3.jpg" alt="">
+                   
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/sample3.jpg" alt="">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <i class="material-icons">keyboard_arrow_left</i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Carousel Card -->
+          </div>
+       
+          <!--<div class="about-image">
+            <img src="assets/images/about1.jpg" class="about-img1" alt="image">
+            <img src="assets/images/about2.jpg" class="about-img2" alt="image">
+            <img src="assets/images/5.png" class="shape-img" alt="image">
+            </div> -->
           </div><!--./col-lg-6-->
         </div><!--./row-->
       </div><!--./container-->
       
     </section>
         
-   
-  
-
-  <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-12">
-        <div class="footer_heading">
-          <h4 class="fotitle">Links</h4>     
-            <ul class="f1-list">
-              <li><a href="index.php">Home</a></li>
-              <li><a href="about.php">About Us</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="financials.php">Financials</a></li>
-              <li><a href="feedback.php">Feedback</a></li>
-              <li><a href="career.php">Career</a></li>
-              <li><a href="contact.php">Contact Us</a></li>
-          </ul>
-        </div><!--./footer_heading-->  
-      </div><!--./col-lg-3-->
-      <div class="col-lg-6 col-md-8 col-12">
-        <div class="footer_heading">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12"><h4 class="fotitle">Main Menu</h4></div> 
-            <div class="col-lg-6 col-md-6 col-12">
-              <ul class="f1-list">
-                <li><a href="mainmenu.php#Incorporation">Incorporation</a></li>
-                <li><a href="mainmenu.php#Certification">Certification</a></li>
-                <li><a href="mainmenu.php#Corporate">Corporate Setup</a></li>
-                <li><a href="mainmenu.php#Human">Human Resources</a></li>
-                <li><a href="mainmenu.php#Organization">Organization Set up</a></li>
-                 <li><a href="about.php#keyPersonnel">Key Personnel</a></li>
-              </ul> 
-            </div>   
-              <div class="col-lg-6 col-md-6 col-12">
-                <ul class="f1-list">
-                  <li><a href="mainmenu.php#Completed">Completed Works</a></li>
-                  <li><a href="mainmenu.php#Equipments">Equipments and Vehicles</a></li>
-                  <li><a href="mainmenu.php#Associations">Associations</a></li>
-                  <li><a href="mainmenu.php#Associations">Acco. & Commendations</a></li>
-                  <li><a href="https://www.rediffmailpro.com/cgi-bin/login.cgi" target="_blank">Check Mail</a></li>
-                </ul>
-              </div>  
-          </div><!--./row-->  
-        </div><!--./footer_heading-->  
-      </div><!--./col-lg-6-->
-      <div class="col-lg-3 col-md-12 col-12">
-        <div class="footer_heading">
-          <h4 class="fotitle">Connect With Us</h4>
-          <ul class="address-list">
-            <li><i class="fa fa-map-marker"></i>ANS House, E-2, Block B1 Extension,
-Mohan Cooperative Industrial Estate,
-Mathura Road, New Delhi – 110 044</li>
-            <li><i class="fa fa-phone"></i>+91 11 4545 0909</li>
-            <li><i class="fa fa-envelope-o"></i>
-              <a href="mailto:info@ansconstructions.com">info@ansconstructions.com</a>
-            </li>
-          </ul>
-        </div><!--./footer_heading-->  
-      </div>
-    </div><!--./row--> 
-  </div><!--./container--> 
-
-</footer>  
-
-  <section class="copyright">
+<section>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-12 col-12">
-          <p class="fleft mt-2">Copyright © 2021 ANS Constructions Private Limited. All rights reserved.</p>
-        </div>
-        <div class="col-lg-6 col-md-12 col-12">
-           <ul class="fo-social fright">
-             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-             <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-            </ul> 
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="section-wrap">
+            <div class="subtitle">Atrangi Event</div>
+            <h2 class="section-title">Latest Events</h2>
+            <div class=bar></div>
+            <div class="bg-title lax" data-lax-preset=driftRight>Events</div><a href="#" class="btn btn-rose btn-round">View More Events</a>
+          </div><!--./section-wrap-->
+        </div><!--./col-lg-12-->
+      </div><!--./row-->
+    </div><!--./container-->
+  <div class="eventbg">   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="works-boxes section-slider owl-carousel" data-items="4" data-margin="30" data-loop="true" data-center="true" data-autoplay="true" data-dots="true">
+            <div class="item event-box">
+              <div class="outer">
+                <div class="image pr__image__cover">
+                  <img src="assets/images/sample3.jpg">
+                </div>
+                  <div class="inner">
+                    <h3 class="title uk-h4">Hot & Cool Foods</h3>
+                    <p class="category">There's a lot of planning involved in setting up foods at atrangi fest.</p>
+                    <a href="#" class="link uk-position-cover btn btn-rose">View More</a>
+                </div>
+              </div>
+            </div><!--./event-box--> 
+            <div class="item event-box">
+              <div class="outer">
+                <div class="image pr__image__cover">
+                  <img src="assets/images/sample3.jpg">
+                </div>
+                  <div class="inner">
+                    <h3 class="title uk-h4">Many Shops</h3>
+                    <p class="category">There's a lot of planning involved in setting up foods at atrangi fest.</p>
+                    <a href="#" class="link uk-position-cover btn btn-rose">View More</a>
+                </div>
+              </div>
+            </div><!--./event-box--> 
+            <div class="item event-box">
+              <div class="outer">
+                <div class="image pr__image__cover">
+                  <img src="assets/images/sample3.jpg">
+                </div>
+                  <div class="inner">
+                    <h3 class="title uk-h4">Music & Fun</h3>
+                    <p class="category">There's a lot of planning involved in setting up foods at atrangi fest.</p>
+                    <a href="#" class="link uk-position-cover btn btn-rose">View More</a>
+                </div>
+              </div>
+            </div><!--./event-box--> 
+            <div class="item event-box">
+              <div class="outer">
+                <div class="image pr__image__cover">
+                  <img src="assets/images/sample3.jpg">
+                </div>
+                  <div class="inner">
+                    <h3 class="title uk-h4">Indian Art Craft</h3>
+                    <p class="category">There's a lot of planning involved in setting up foods at atrangi fest.</p>
+                    <a href="#" class="link uk-position-cover btn btn-rose">View More</a>
+                </div>
+              </div>
+            </div><!--./event-box-->
+            <div class="item event-box">
+              <div class="outer">
+                <div class="image pr__image__cover">
+                  <img src="assets/images/sample3.jpg">
+                </div>
+                  <div class="inner">
+                    <h3 class="title uk-h4">Atrangi Special</h3>
+                    <p class="category">There's a lot of planning involved in setting up foods at atrangi fest.</p>
+                    <a href="#" class="link uk-position-cover btn btn-rose">View More</a>
+                </div>
+              </div>
+            </div><!--./event-box-->  
+        </div><!--./owl-carousel-->  
+      </div><!--./row-->
+    </div><!--./container--> 
+  </div>
+</section> 
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="section-wrap">
+            <div class="subtitle">Atrangi Videos</div>
+            <h2 class="section-title">Latest Videos</h2>
+            <div class=bar></div>
+            <div class="bg-title lax" data-lax-preset=driftRight>Videos</div><a href="#" class="btn btn-rose btn-round">View More Videos</a>
+          </div><!--./section-wrap-->
+        </div><!--./col-lg-12-->
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="card">
+            <div class="videobox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/yWZtuFa9gEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--./videobox-->
+          </div>  
+        </div><!--./col-lg-4-->
+
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="card">
+            <div class="videobox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/yWZtuFa9gEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--./videobox-->
+          </div>  
+        </div><!--./col-lg-4-->
+
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="card">
+            <div class="videobox">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/yWZtuFa9gEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--./videobox-->
+          </div>  
+        </div><!--./col-lg-4-->
+
+      </div><!--./row-->
+    </div><!--./container-->
+  </section> 
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="section-wrap">
+            <div class="subtitle">Atrangi Sponsers</div>
+            <h2 class="section-title">Offcial Sponsers</h2>
+            <div class=bar></div>
+            <div class="bg-title lax" data-lax-preset=driftRight>Sponsers</div><a href="#" class="btn btn-rose btn-round">View More Events</a>
+          </div><!--./section-wrap-->
+        </div><!--./col-lg-12-->
+      </div><!--./row-->
+    </div><!--./container-->
+  <div class="">   
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <ul class="spnsors-group">
+            <li class="border-b"><img src="assets/images/clients/redfm.png" alt=""></li>
+            <li class="border-b"><img src="assets/images/clients/rnt.png" alt=""></li>
+            <li class="border-b"><img src="assets/images/clients/chatwal-gr.png" alt=""></li>
+            <li class="border-b"><img src="assets/images/clients/cv.png" alt=""></li>
+            <li class="border-b border-r"><img src="assets/images/clients/jaadu.png" alt=""></li>
+            <li class=""><img src="assets/images/clients/khalsa.png" alt=""></li>
+            <li class=""><img src="assets/images/clients/qpoint.png" alt=""></li>
+            <li class=" "><img src="assets/images/clients/reb-des.png" alt=""></li>
+            <li class=""><img src="assets/images/clients/rnt.png" alt=""></li>
+            <li class="border-r"><img src="assets/images/clients/robin.png" alt=""></li>
+            <li class="border-r"><img src="assets/images/clients/saket-dental.png" alt=""></li>
+            <li class="border-r"><img src="assets/images/clients/sam.png" alt=""></li>
+          </ul>
+        </div><!--./col-lg-12-->
+      </div><!--./row-->
+    </div><!--./container--> 
+  </div>
+</section> 
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12">
+        <div class="section-wrap">
+          <!-- <div class="subtitle">Atrangi Sponsers</div> -->
+          <h2 class="section-title">Faq</h2>
+          <div class=bar></div>
+          <div class="bg-title lax" data-lax-preset=driftRight>Faq</div><!-- <a href="#" class="btn btn-rose btn-round">View More Events</a> -->
+        </div><!--./section-wrap-->
+      </div><!--./col-lg-12-->
+      <div class="col-lg-12">
+           <div class="faq-accordion">
+              <div class="accordion" id="accordionExample">
+                  <div class="panel">
+                      <div class="panel-heading" id="headingOne">
+                          <h4 class="panel-title">
+                              <a href="#" class="btn btn-link" aria-expanded="false"  aria-controls="collapseOne" data-toggle="collapse" data-target="#collapseOne"><span><i class="fa fa-plus"></i></span>How to contact with riders emergency ?</a>                  
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
+                          </div>
+                      </div>
+                  </div><!--./panel 1-->
+                  <div class="panel">
+                      <div class="panel-heading" id="headingTwo">
+                          <h4 class="panel-title">
+                              <a href="#" class="btn btn-link collapsed" aria-expanded="false"  aria-controls="collapseOne" data-toggle="collapse"  data-target="#collapseTwo"><span><i class="fa fa-plus"></i></span>App installation failed, how to update system information?</a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-expanded="false"  aria-controls="collapseOne"  data-toggle="accordionExample" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
+                          </div>
+                      </div>
+                  </div><!--./panel 2-->
+                  <div class="panel">
+                      <div class="panel-heading" id="headingThree">
+                          <h4 class="panel-title">
+                              <a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><span><i class="fa fa-plus"></i></span>Website reponse taking time, how to improve?</a>                     
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
+                          </div>
+                      </div>
+                  </div><!--./panel 3-->
+
+                  <div class="panel">
+                      <div class="panel-heading" id="headingFour">
+                          <h4 class="panel-title">
+                              <a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><span><i class="fa fa-plus"></i></span>New update fixed all bug and issues</a>                     
+                          </h4>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
+                          </div>
+                      </div>
+                  </div><!--./panel 3-->
+
+              </div><!--./accordion-->
+          </div><!--./bs-example-->
+        </div><!--./col-lg-12-->
+    </div><!--./row-->
+  </div><!--./container-->
+</section>
+
+<section class="map">
+      <iframe width="100%" height="600" id="gmap_canvas"src="https://maps.google.com/maps?q=RTO%20Ground%2C%20Civil%20Lines%20jabalpur&t=&z=13&ie=UTF8&iwloc=&output=embed"frameborder="0" scrolling="no" marginheight="0"marginwidth="0" style="border:0; display: block;"></iframe>
+      <div class="contactformbg">
+        <div class="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-12 col-12 contact-form">
+                <div class="title-header" style="color: #000;">
+                  <h3 class="title-medium pull-left">Send us a message</h3>
+                  <div class="icon pull-right"><i class="fa fa-envelope-o"></i></div>
+                </div>
+                 <div class="form-group">
+                  <label for="name" class="bmd-label-floating">Your name</label>
+                  <input type="text" class="form-control" id="name">
+                </div><!--./form-group-->
+                <div class="form-group">
+                  <label for="email" class="bmd-label-floating">Your email</label>
+                  <input type="email" class="form-control" id="email">
+                </div><!--./form-group-->
+                <div class="form-group">
+                  <label for="mobile" class="bmd-label-floating">Your mobile</label>
+                  <input type="text" class="form-control" id="mobile">
+                </div><!--./form-group-->
+                <div class="form-group label-floating">
+                  <label class="form-control-label bmd-label-floating" for="exampleInputTextarea"> You can write your text here...</label>
+                  <textarea class="form-control" rows="5" id="exampleInputTextarea"></textarea>
+                </div><!--./form-group-->
+                <div class="form-group">
+                   <button class="btn btn-rose">Submit</button>
+                </div><!--./form-group-->
+              </div><!--./col-lg-8-->
+              <div class="col-lg-4 col-md-12 col-12 information">
+                <div class="title-header">
+                  <h3 class="title-medium">Contact Informatione</h3>
+                </div>
+                <div class="contact-datails">
+                  <div class="icon"><i class="fa fa-map-marker"></i></div>
+                  <div class="info2">
+                    <span class="detail">Ground Floor, Nahta Tower, Near Aditya Hospital, Napier Town, Jabalpur (M.P.)</span>
+                  </div>
+                </div>
+                <div class="contact-datails">
+                  <div class="icon"><i class="fa fa-phone"></i></div>
+                  <div class="info2"><span class="detail">+91-9111163666</span></div>
+                </div>
+                <div class="contact-datails">
+                   <div class="icon"><i class="fa fa-envelope"></i></div>
+                   <div class="info2"><span class="detail">theatrangifest@gmail.com</span></div>
+                </div>
+                <div class="social text-center">
+                <a type="button" class="btn btn-social btn-just-icon btn-round btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a type="button" class="btn btn-social btn-just-icon btn-round btn-google"><i class="fa fa-instagram"></i></a>
+                <a type="button" class="btn btn-social btn-just-icon btn-round btn-youtube"><i class="fa fa-youtube"> </i></a>
+                </div>
+              </div><!--./col-lg-4-->
+            </div><!--./row-->
+          </div><!--./container-->
+        </div><!--./contact--> 
+      </div><!--./contactformbg-->
+    </section>   
+
+<footer>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12 col-md-124 col-12">
+        <div class="flogo"><img src="assets/images/logo.png"  /></div>
+            <ul class="f1-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Financials</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div><!--./col-lg-12-->
+      <div class="col-lg-12 col-md-12 col-12">
+          <div class="copy_right">Copyright © 2021 Atrangi. All rights reserved.</div>
         </div>
         <a class="back-to-top" href="#" style="display: inline;"><i class="fa fa-angle-up"></i></a> 
-      </div>
-    </div>
-  </section>   
+    </div><!--./row--> 
+  </div><!--./container--> 
+</footer>    
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="assets/js/plugins/moment.min.js"></script>
-  <script src="assets/js/plugins/custom.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.classyslider.min.js"></script>
+  <script src="assets/js/custom.js"></script>
   <script src="assets/js/material-kit.min.js?v=2.2.0" type="text/javascript"></script>   
-  <script src="assets/js/bideo.js" defer></script><!-- Video Background JS Plugin -->
-  <script src="assets/js/video-background.js" defer></script><!-- Video Background JS -->
+  <script src="assets/js/bideo.js"></script>
+  <script src="assets/js/video-background.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
   
