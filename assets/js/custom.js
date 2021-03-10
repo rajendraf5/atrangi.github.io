@@ -12,27 +12,6 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
-
-    // $('.page-scroll').click(function() {
-    //   $('.navbar-collapse').collapse('hide');
-    // });
-
-   // stickey menu
-    $(window).on('scroll',function() {    
-        var scroll = $(window).scrollTop(),
-            mainHeader = $('#sticky-header'),
-            mainHeaderHeight = mainHeader.innerHeight();
-        
-        // console.log(mainHeader.innerHeight());
-        if (scroll > 1) {
-            $("#sticky-header").addClass("sticky");
-        }else{
-            $("#sticky-header").removeClass("sticky");
-        }
-    });
-  
-
-
     // Clients carousel (uses the Owl Carousel library)
   // $(".clients-carousel").owlCarousel({
   //   autoplay: true,
@@ -142,41 +121,40 @@ jQuery(document).ready(function( $ ) {
         });
     });
 
+   // Closes responsive menu when a scroll trigger link is clicked
+  $('.page-scroll').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+   // aos animation //
+ $(document).ready(function() {
+      $('.slider2').ClassySlider();
+      AOS.init({
+     duration: 1200,
+    })
+});
+
+  window.onload = function () {
+		lax.setup();
+		const e = () => {
+			lax.update(window.scrollY), window.requestAnimationFrame(e)
+		};
+		window.requestAnimationFrame(e)
+	};
+
 !function(a) {
     //"use strict";
     a(".page-scroll").bind("click", function(b) {
         var c = a(this);
         a("html, body").stop().animate({
-            scrollTop: a(c.attr("href")).offset().top - 50
+            scrollTop: a(c.attr("href")).offset().top - 80
         }, 1250, "easeInOutExpo"), b.preventDefault();
+    }), a("body").scrollspy({
+        target: ".navbar",
+        offset: 81
+    }), a(".navbar-collapse ul li a").click(function() {
+        a(".navbar-toggle:visible").click();
     });
 }(jQuery);
 
-( function ( $ ) {
-    'use strict';
-  $('#listtabs').on('click', '.tablink,#prodTabs a', function (e) {
-    e.preventDefault();
-    window.location.hash = this.hash;
-    $(this).tab('show');
-    $(window).scrollTop(0);
-  });
-   
-  $('ul#stmenu a').on('click', function (e) {       
-    window.location.hash = this.hash;
-    var hash = window.location.hash;    
-    hash && $('ul#prodTabs a[href="' + hash + '"]').tab('show');
-    if (location.hash) {               // do the test straight away
-      window.scrollTo(0, 0);         // execute it straight away
-      setTimeout(function () {
-               window.scrollTo(0, 0);     // run it a bit later also for browser compatibility
-           }, 1);
-    }   
-  });
-   
-  $(document).ready(() => {
-    var hash = window.location.hash;
-    hash && $('ul#prodTabs a[href="' + hash + '"]').tab('show');
-    $(window).scrollTop(0);
-  }); 
-} ( jQuery ) )
 
