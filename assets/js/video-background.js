@@ -22,7 +22,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'http://techslides.com/demos/sample-videos/small.ogv',
+        src: 'assets/images/small.ogv',
         type: 'video/mp4'
       }
     ],
