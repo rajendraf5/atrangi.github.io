@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 body{ /*font-family: 'Bree Serif', serif;color: #8c8c8c;*/ overflow-x: hidden;}
+a:hover,
+a{transition: all 0.5s ease 0s;}
 .section {padding: 70px 0;}
+.bggray{background:#f6f4f7;}
 header {
   width: 100%;
     position: fixed;
@@ -510,7 +513,122 @@ header.sticky .navbar-toggler {top: 20px;}*/
     font-weight: 600;
     position: relative;
     border-bottom: 1px solid #fff;
+}
+
+/*event*/
+.events{display: block;border-radius: 6px;overflow: hidden;transition: all 0.5s ease 0s;}
+.eventsimg{display: block;}
+.events-thumb{position: relative;}
+.events-thumb {position: relative;display: block;overflow: hidden;}
+.events-thumb img {
+    vertical-align: middle;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    margin-bottom: 0;
+    width: 100%;
+}
+.events-thumb:before {
+    content: "\f045";
+    display: block;
+    position: absolute;
+     font-family: 'fontAwesome';
+    top: 0;
+    color: #fff;
+    vertical-align: middle;
+    top: 45%;
+    text-align: center;
+    z-index: 9;
+    width: 100%;
+    font-size: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.events:hover .events-thumb:hover:before {font-size: 32px;}
+
+.events-thumb:after {
+    bottom: 0;
+    display: block;
+    height: 0;
+    width: 100%;
+    background: #000000;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 8;
+    content: "";
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.events-thumb:hover:after {height: 100%;}
+.events-thumb:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+}
+
+
+ .eventsimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.eventsimg:hover img {
+   -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.eventsimg img {
+    height: 100%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.eventwrap {
+    background: #ffffff none repeat scroll 0 0;
+    text-align: center;
+    padding: 10px 20px 20px;
+    border-top: 4px solid #f20066;
+    box-shadow: 0 30px 30px rgb(8 13 62 / 15%);
+    transition: all 0.5s ease 0s;
+}
+.events:hover .head-title{color: #e91e63}
+.events:hover{ box-shadow: 0 14px 26px -12px rgb(84 73 227 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(84 73 227 / 20%);
+    -webkit-animation: pulseOrange 1s 1 linear;
+    animation: pulseOrange 1s 1 linear;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);}
+.events:hover .eventwrap{box-shadow: 0 30px 50px rgb(8 13 62 / 15%); background:#d5c653;}
+.head-title{text-align: center;
+    margin-bottom: 20px; transition: all 0.5s ease 0s;
+    font-weight: 500;}
+.head-title:after{
+    clear: both;
+    content: "";
+    display: block;
+    left: 0;
+    width: 85px;
+    margin: 20px auto;
+    border-top: 4px double #e91e63;
     }
+/*end event*/    
 
 /*-------------------------------------------------------------------------------------------*/
 /* Partner Section   ||---------------------------- */
@@ -602,7 +720,17 @@ header.sticky .navbar-toggler {top: 20px;}*/
   opacity: 1;
   visibility: visible;
 }
-
+.rigis-sponsor,
+.gold-sponsor,
+.partner-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: #ff2d55;
+    text-transform: uppercase;
+}
+.gold-sponsor{color: #8dc63f !important;}
+.rigis-sponsor{color: #00acee !important;}
 .section-title{
   font-size: 40px;
   font-weight: 600;
@@ -611,7 +739,7 @@ header.sticky .navbar-toggler {top: 20px;}*/
   line-height: 1.3;
 }
 
-
+.displaylock{display: block;}
 .section-title span {
   position: relative;
   display: inline-block;
@@ -635,6 +763,10 @@ header.sticky .navbar-toggler {top: 20px;}*/
     background: url(../../assets/images/contact-bg.jpg) center;
     background-size: cover;
 }
+
+.registerform{color: #000; font-weight: 500}
+.registerform label{font-weight: 500;color: #000;}
+.registerform .form-check .form-check-label {color: #9c27b0;font-weight: 500;}
 .contact{}
 .contact-form {
     background: #fff;
