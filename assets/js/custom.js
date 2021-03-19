@@ -142,6 +142,13 @@ jQuery(document).ready(function( $ ) {
 		window.requestAnimationFrame(e)
 	};
 
+  // jQuery counterUp (used in Facts section)
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+
 !function(a) {
     //"use strict";
     a(".page-scroll").bind("click", function(b) {
