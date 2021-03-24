@@ -92,7 +92,7 @@ header.sticky .navbar-toggler {top: 20px;}*/
 }
 
 @media (max-width: 767.98px) {
-  .typewriter { font-size: 35px; }
+  .typewriter { font-size: 24px; }
 }
 @media (min-width: 768px) {
   .typewriter { font-size: 60px; }
@@ -517,7 +517,7 @@ header.sticky .navbar-toggler {top: 20px;}*/
 }
 
 /*event*/
-.events{display: block;border-radius: 6px;overflow: hidden;transition: all 0.5s ease 0s;}
+.events{display: block;border-radius: 6px;overflow: hidden;transition: all 0.5s ease 0s; margin-bottom: 15px;}
 .eventsimg{display: block;}
 .events-thumb{position: relative;}
 .events-thumb {position: relative;display: block;overflow: hidden;}
@@ -1552,3 +1552,12 @@ footer{background: #006;padding-top: 50px;font-size: 14px;color: #c1c1c1;}
 .footerbottom p{line-height: 24px;}
 .fleft{text-align: left;}
 .fright{text-align: right;}
+
+@media (max-width: 768px){
+  .bg-title {font-size: 90px;left: auto;right: 0;}
+  .videosubtitle {font-size: 2rem;}
+  .section-wrap .btn {position: relative;top: 0;right: auto;left: 0;margin-top: 18px;}
+}
+@media (max-width: 991px){
+.navbar .navbar-nav .nav-item .nav-link {color: #000;}
+}
