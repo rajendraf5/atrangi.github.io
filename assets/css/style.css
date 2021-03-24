@@ -1560,4 +1560,5 @@ footer{background: #006;padding-top: 50px;font-size: 14px;color: #c1c1c1;}
 }
 @media (max-width: 991px){
 .navbar .navbar-nav .nav-item .nav-link {color: #000;}
+ header.sticky .navbar-toggler{background:#e91e63;}
 }
