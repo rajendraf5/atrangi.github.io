@@ -22,7 +22,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'assets/images/small.ogv',
+        src: 'assets/images/atrangivideo.mp4',
         type: 'video/mp4'
       }
     ],
