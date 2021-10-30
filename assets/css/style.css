@@ -653,7 +653,7 @@ header.sticky .navbar-toggler {top: 20px;}*/
 
 .spnsors-group li img {
   display: block;
-  margin: 0 auto;height: 100px;
+  margin: 0 auto;height: 65px;
 }
 @media only screen and (max-width: 767px) {
   .spnsors-group li {
